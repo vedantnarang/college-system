@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const appointmentSchema = new mongoose.Schema({
   professorId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User', 
+    ref: 'user', 
     required: true
   },
   date: {
@@ -12,7 +12,7 @@ const appointmentSchema = new mongoose.Schema({
   },
   studentId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    ref: 'user',
     default: null 
   },
   status: {
